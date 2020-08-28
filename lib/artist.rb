@@ -23,7 +23,7 @@ class Artist
   
   def genres
     Song.all.collect do |song| 
-      arr.push(song.genres)
+      song.genres
     end 
   end
   
