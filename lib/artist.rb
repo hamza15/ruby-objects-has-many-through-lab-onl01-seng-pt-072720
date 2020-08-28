@@ -17,4 +17,9 @@ class Artist
     Song.all.select {|song| song.artist == self
   end
   
+  def genres
+    arr = []
+    Song.all.select {|song| arr.push(song.genres) == self
+  end
+  
 end
