@@ -22,11 +22,9 @@ class Artist
   end
   
   def genres
-    arr = []
-    Song.all.each do |song| 
+    Song.all.collect do |song| 
       arr.push(song.genres)
     end 
-    arr
   end
   
 end
