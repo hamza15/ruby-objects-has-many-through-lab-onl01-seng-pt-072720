@@ -19,7 +19,7 @@ class Artist
   
   def genres
     arr = []
-    Song.all.select {|song| arr.push(song.genres) == self
+    Song.all.each {|song| arr.push(song.genres)}
   end
   
 end
