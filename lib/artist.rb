@@ -13,7 +13,7 @@ class Artist
     self.Song.new(name, genre)
   end
   
-  ded songs
+  def songs
   
   end
   
