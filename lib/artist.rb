@@ -19,8 +19,9 @@ class Artist
   
   def genres
     arr = []
-    Song.all.each {|song| arr.push(song.genres)}
-  end 
+    Song.all.each do |song| 
+      arr.push(song.genres)}
+    end 
   end
   
 end
