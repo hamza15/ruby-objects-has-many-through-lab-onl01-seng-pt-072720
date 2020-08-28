@@ -22,6 +22,7 @@ class Artist
     Song.all.each do |song| 
       arr.push(song.genres)}
     end 
+    arr
   end
   
 end
